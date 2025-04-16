@@ -1,0 +1,26 @@
+ Solution 1
+string = "Programming"
+reversed_string = string[::-1]  # Using string slicing
+print("Reversed String:", reversed_string)
+
+# Solution 2
+full_name = input("Enter your full name: ")
+initials = ".".join([name[0].upper() for name in full_name.split()]) + "."
+print("Initials:", initials)
+
+# Solution 3
+string = input("Enter a string to check if it's a palindrome: ")
+if string == string[::-1]:  # Compare the string with its reverse
+    print(f'"{string}" is a palindrome.')
+else:
+    print(f'"{string}" is not a palindrome.')
+
+# Solution 4
+sentence = input("Enter a sentence: ")
+word_count = len(sentence.split())  # Using the split() method
+print("Number of words in the sentence:", word_count)
+
+# Solution 5
+original_string = "This is a string and it is an example."
+modified_string = original_string.replace("is", "was")  # Replace "is" with "was"
+print("Modified String:", modified_string)
